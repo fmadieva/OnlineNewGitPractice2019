@@ -17,9 +17,30 @@ once, git pull doesn’t work for you
 git add .
 git commit -m “commit message”
 git pull
-Then, git will show you conflicting files. You can manually go and update files and leave content that you want. Then, just commit changes again. By doing this, we can decide what changes will stay, since git cannot decide automatically.
+Then, git will show you conflicting files. You can manually go and update files and leave content that you want.
+Then, just commit changes again. By doing this, we can decide what changes will stay, since git cannot decide automatically.
 Fix conflicting files manually or use IDE in-build tools.
 Then, commit again:
 git add .
 git commit -m “message”
 git push
+
+
+
+when you have added on your intelliJ
+and you also made some editing in github website
+
+if you pull from github itself there will be a conflict because
+you have not made commits from your edited version of intelliJ
+What to do when there is a conflict?
+    You pull, you will have a message:
+        Accept yours,
+        Accept theirs,
+        Merge.
+
+      CHoose merge --> add both, then manuallu press on little arrows on both side to have both.
+
+when we made changes from intellij and someone else made changes from github and committed before us and if we try to pull we might have conflicts, first commit our changes git add . --> git commit -m "the message you want to put" --> git pull , then we have conflict message in terminal , merge conflict we go to the files that have conflict in intellij then choose github then resolve conflict , from there click the file then click merge then accept changes from both side then apply after that go to terminal again and git add.--> git commit -m "resolved conflict" -->git push
+
+stash
+take your changes and put them on a side (into git storage) temporarily
